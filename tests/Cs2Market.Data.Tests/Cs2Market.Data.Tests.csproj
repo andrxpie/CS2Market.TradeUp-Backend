@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Exit code 8 = zero tests ran. Remove this line when M2-5 adds the first test. -->
+    <TestingPlatformCommandLineArguments>--ignore-exit-code 8</TestingPlatformCommandLineArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.MTP" />
+    <PackageReference Include="xunit.v3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cs2Market.Data\Cs2Market.Data.csproj" />
+    <ProjectReference Include="..\Cs2Market.TestSupport\Cs2Market.TestSupport.csproj" />
+  </ItemGroup>
+
+</Project>

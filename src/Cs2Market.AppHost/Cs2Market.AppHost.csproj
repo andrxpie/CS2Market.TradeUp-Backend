@@ -1,0 +1,22 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.5.4">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- DCP and the dashboard come from the Aspire CLI bundle; the NuGet packages are being
+         deprecated. Without `aspire` on PATH the build bootstraps the bundle through dnx. -->
+    <AspireUseCliBundle>true</AspireUseCliBundle>
+    <UserSecretsId>7582ba08-0539-49f6-b89a-a88a97210621</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+    <PackageReference Include="Aspire.Hosting.Redis" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cs2Market.Api\Cs2Market.Api.csproj" />
+    <ProjectReference Include="..\Cs2Market.Ingestion\Cs2Market.Ingestion.csproj" />
+    <ProjectReference Include="..\Cs2Market.Mcp\Cs2Market.Mcp.csproj" />
+  </ItemGroup>
+
+</Project>

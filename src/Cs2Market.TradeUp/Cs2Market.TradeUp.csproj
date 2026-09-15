@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Pure domain. No PackageReference and no ProjectReference, ever (docs/M1_DOMAIN_API.md). -->
+
+</Project>

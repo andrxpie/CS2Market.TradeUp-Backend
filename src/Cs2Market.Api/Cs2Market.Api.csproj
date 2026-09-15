@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cs2Market.ServiceDefaults\Cs2Market.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Cs2Market.Data\Cs2Market.Data.csproj" />
+    <ProjectReference Include="..\Cs2Market.TradeUp\Cs2Market.TradeUp.csproj" />
+  </ItemGroup>
+
+</Project>

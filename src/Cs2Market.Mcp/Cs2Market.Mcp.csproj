@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- A library behind a thin host: everything is registered by AddMcpSurface()/MapMcpSurface(),
+       so the API can serve /mcp in-process in production (docs/ARCHITECTURE.md § Deployment).
+       Calls the API over HTTP; never references Cs2Market.Data. -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cs2Market.ServiceDefaults\Cs2Market.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

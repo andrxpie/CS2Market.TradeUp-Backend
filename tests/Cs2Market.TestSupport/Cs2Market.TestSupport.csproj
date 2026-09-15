@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Shared fixture seeding for Data.Tests (M2-5) and Api.Tests (M3-5). One definition, one place. -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cs2Market.Data\Cs2Market.Data.csproj" />
+    <ProjectReference Include="..\..\src\Cs2Market.TradeUp\Cs2Market.TradeUp.csproj" />
+  </ItemGroup>
+
+</Project>

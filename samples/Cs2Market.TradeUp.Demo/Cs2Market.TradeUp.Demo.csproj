@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <!-- M1: references only the pure domain. M2-3 adds the ingestion DTOs for the cache mode. -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cs2Market.TradeUp\Cs2Market.TradeUp.csproj" />
+  </ItemGroup>
+
+</Project>
