@@ -2,4 +2,9 @@
 
   <!-- Pure domain. No PackageReference and no ProjectReference, ever (docs/M1_DOMAIN_API.md). -->
 
+  <ItemGroup>
+    <!-- The scanner's differential test switches the EV upper bound off through an internal entry point. -->
+    <InternalsVisibleTo Include="Cs2Market.TradeUp.Tests" />
+  </ItemGroup>
+
 </Project>
